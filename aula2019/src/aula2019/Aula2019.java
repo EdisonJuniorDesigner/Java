@@ -101,7 +101,7 @@ public class Aula2019 {
         }
         System.exit(0);
    }*/
-    public static void main(String[] args) {
+    /*public static void main(String[] args) {
 		
 		int codigoTaxaAumento;
 		float valorProduto;
@@ -130,6 +130,129 @@ public class Aula2019 {
 		default: JOptionPane.showMessageDialog(null,"Código" + codigoTaxaAumento,"Código de taxa de aumento desconhcido",JOptionPane.PLAIN_MESSAGE);
 			break;
 		}
+		System.exit(0);
+    }*/
+    /*public static void main(String[] args) {
+
+		int quantidadeFuncionarios = 0;
+		float salarioFuncionario = 0;
+		float totalSalarios = 0;
+		float mediaSalarial = 0;
+		//variável contadora para laço
+		int contadora = 0;
+		
+		quantidadeFuncionarios = Integer.parseInt(JOptionPane.showInputDialog(null,"Digite a quantidade de funcionários","Número de funcionários",JOptionPane.QUESTION_MESSAGE));
+		
+		while (contadora < quantidadeFuncionarios){
+			contadora++;
+			salarioFuncionario = Float.parseFloat(JOptionPane.showInputDialog(null,"Digite o salário do funcionário","Salário",JOptionPane.QUESTION_MESSAGE));
+			totalSalarios = totalSalarios + salarioFuncionario;
+		}
+		
+		mediaSalarial = totalSalarios / quantidadeFuncionarios;
+		System.out.println("Média Salarial = " + mediaSalarial);
+
+		System.exit(0);
+	}*/
+    /*public static void main(String[] args) {
+        String senha;
+        double n1;
+        double n2;
+        String digiteSenha;
+        senha = JOptionPane.showInputDialog("Crie uma senha.","Digite sua senha aqui.");
+        n1 = Double.parseDouble(JOptionPane.showInputDialog(null,"Digite o primeiro número."));
+        n2 = Double.parseDouble(JOptionPane.showInputDialog(null,"Digite o segundo número."));
+        digiteSenha = JOptionPane.showInputDialog(null,"Digite sua senha:");
+        if(senha.equals(digiteSenha)){
+            JOptionPane.showMessageDialog(null,"O resultado da equação foi " + n1/n2);
+        }else{
+            JOptionPane.showMessageDialog(null,"Senha Incorreta!");
+        }
+        System.exit(0);
+    }*/
+    /*public static void main(String[] args) {
+        int codigoExpressao;
+        double n1;
+        double n2;
+	double valor;
+		
+	
+                n1 = Double.parseDouble(JOptionPane.showInputDialog(null,"Digite o primeiro número."));
+                n2 = Double.parseDouble(JOptionPane.showInputDialog(null,"Digite o segundo número."));
+		codigoExpressao = Integer.parseInt(JOptionPane.showInputDialog(null,"Escolha o código da expressão.\n1) '+'  2) '-'  3) '*'  4) '/'","Código",JOptionPane.QUESTION_MESSAGE));
+		
+		switch (codigoExpressao) {
+		case 1: valor = n1 + n2;
+			JOptionPane.showMessageDialog(null,"Valor da soma foi de " + valor);
+			break;
+			
+		case 2: valor = n1 - n2;
+		JOptionPane.showMessageDialog(null,"Valor da subtração foi de " + valor);
+			break;
+			
+		case 3: valor = n1 * n2;
+		JOptionPane.showMessageDialog(null,"Valor da multiplicação foi de " + valor);			
+			break;
+			
+		case 4: valor = n1 / n2;
+		JOptionPane.showMessageDialog(null,"Valor da divisão foi de " + valor);	
+			break;
+			
+		default: JOptionPane.showMessageDialog(null,"O código da expressão é desconhecido = " + codigoExpressao,"Código",JOptionPane.PLAIN_MESSAGE);
+			break;
+		}
+		System.exit(0); 
+    }*/
+    /*public static void main(String[] args) {
+        int codigoPedido;
+		
+		codigoPedido = Integer.parseInt(JOptionPane.showInputDialog(null,"Escolha o código do Pedido.\n1) X-Bacon  2) X-Salada  3) X-Picanha  4) X-Tudo","Menu Lanchonete",JOptionPane.QUESTION_MESSAGE));
+		
+		switch (codigoPedido) {
+		case 1:
+			JOptionPane.showMessageDialog(null,"X-Bacon\nPreço R$ 20,00");
+			break;
+			
+		case 2:
+		JOptionPane.showMessageDialog(null,"X-Salada\nPreço R$ 15,00");
+			break;
+			
+		case 3:
+		JOptionPane.showMessageDialog(null,"X-Picanha\nPreço R$ 22,00");			
+			break;
+			
+		case 4:
+		JOptionPane.showMessageDialog(null,"X-Tudo\nPreço R$ 30,00");	
+			break;
+			
+		default: JOptionPane.showMessageDialog(null,"O código do Pedido é desconhecido = " + codigoPedido,"Código Pedido",JOptionPane.ERROR_MESSAGE);
+			break;
+		}
+		System.exit(0); 
+    }*/
+    public static void main(String[] args) {
+                String aluno;
+                String turma;
+                int quantidadeMateria = 0;
+		//double salarioFuncionario = 0;
+		int notas = 0;
+                int nota1, nota2, nota3;
+		int media = 0;
+		//variável contadora para laço
+		int contadora = 0;
+		
+		aluno = JOptionPane.showInputDialog(null,"Digite o nome do Aluno","Digite o nome do aluno aqui",JOptionPane.QUESTION_MESSAGE);
+		turma = JOptionPane.showInputDialog(null,"Digite a turma","Digite o nome do aluno aqui",JOptionPane.QUESTION_MESSAGE);
+                quantidadeMateria = Integer.parseInt(JOptionPane.showInputDialog(null,"Digite a quantidade de Matérias","Matérias",JOptionPane.QUESTION_MESSAGE));
+                
+		for(notas=0;notas<3;notas++){
+			contadora++;
+			notas = Double.parseDouble(JOptionPane.showInputDialog(null,"Digite as notas","Notas",JOptionPane.QUESTION_MESSAGE));
+                }
+		
+		media = (notas+notas)/quantidadeMateria;
+		System.out.println("Média Salarial = " + media);
+
 		System.exit(0);
     }
 }
